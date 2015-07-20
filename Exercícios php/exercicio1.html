@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Minha primeira página</title>
+		<meta charset = "utf-8">
+	</head>
+	<body>
+		<h2>Texto Grande</h2>
+		<h3>Texto Médio</h3>
+		<p>O IComp atua principalmente nos cursos de Ciência da Computação,</br>
+		 Sistemas de Informação e Engenharia da Computação. Também oferece disciplinas básicas</br>
+		 de computação para 27 cursos de graduação em 7 unidades acadêmicas distintas.</br>
+		 <a href="http://icomp.ufam.edu.br/"> www.icomp.ufam.edu.br/ </a></br>	
+		</p>
+
+
+		<form method="GET" action="script.php">
+		<table border="0">
+			<tr>
+				<td>Seu nome:</td>
+				<td><input type="text" name="nome" id="nome"/> </br></td>
+			</tr>
+
+			<tr>
+				<td>Sexo:</td>
+				<td>
+				<select name="sex" id="id">
+					<option value="1"> Masculino </option>
+					<option value="2"> Feminino </option>
+				</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td style="vertical-align:top">Comentário:</td>
+				<td>
+					<textarea name="coment" rows="15" cols="50"></textarea></br>
+					<input type="submit" name="submit" value="Enviar" id="submit">
+				</td>
+
+			</tr>
+
+		</table>
+		</form>
+
+	</body>
+</html>
