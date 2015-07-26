@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Exercício Java</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	
+		<table border="0">
+			<tr>
+				<td><img src="C:\Users\Daniel\Documents\Ufam\Prog-Web\progweb\ProgWeb\Exercício Java Script/Daniel.jpg" width="50" height="50"></td>
+				<td>Daniel Godinho</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<p>O que quer que você faça na vida, será insignificante. Mas é muito importante que faça, porquê ninguém mais fará.<br> Como quando alguém entra na sua vida e metade de você diz: “você não está preparado”. Mas a outra metade diz: <br>“torne-a sua para sempre!”
+					</p>
+				</td>
+			</tr>
+		</table>
+
+		<table>
+			<tr>
+				<td><div id="contaLike">0</div></td> <td>curtidas</td>
+				<td><button id="like" onclick="somaCurtida()"> Curtir </button></td>
+			</tr>
+		</table>
+		
+		<p>Cometários</p>
+		
+		<div id="comentario"></div>
+
+		<textarea cols="30" rows="5" id="textoComentado"></textarea><br>
+		<button id="botaoComentar" onclick="fazComentario()">Comentar</button>
+		
+		<script>
+
+			function somaCurtida(){
+				var contaLike = document.getElementById("contaLike");
+
+				var aux = contaLike.innerHTML;
+				aux++;
+				contaLike.innerHTML = aux;
+			}
+
+			var botaoComentar = document.getElementById("botaoComentar");
+			var textoComentado = document.getElementById("textoComentado");
+			var comentario = document.getElementById("comentario");
+
+			function fazComentario(){
+				comentario.innerHTML += textoComentado.value + "<br>";
+			}
+		</script>
+
+</body>
+</html>
