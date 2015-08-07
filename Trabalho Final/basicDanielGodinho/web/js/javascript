@@ -1,0 +1,10 @@
+
+function handleMouseOver(elem) {
+			elem.style.background='black';
+			elem.style.color='white';
+		}
+		function handleMouseOut(elem) {
+			
+			elem.style.removeProperty('background');
+			elem.style.removeProperty('color');
+		}
